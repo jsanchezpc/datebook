@@ -14,28 +14,29 @@ import LogInComponent from "../components/LogInComponent.vue";
 import SignUpComponent from "../components/SignUpComponent.vue";
 
 export default {
-    name: 'SignInView',
+    name: "SignInView",
     components: {
         LogInComponent,
-        SignUpComponent
+        SignUpComponent,
     }
-}
+};
 </script>
   
 <style lang="scss" scoped>
 div#signin-body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 100svh;
+    height: 100lvh;
     background-color: rgb(200, 203, 221);
+
     div.row-signin {
         flex: 50%;
     }
 
     @media screen and (max-width: 1070px) {
-
         div.row-signin {
             flex: 100%;
         }
@@ -43,14 +44,13 @@ div#signin-body {
 
     div.log-box {
         background-color: black;
-        width: calc(100% - 2.1%);
-        height: 100vh;
+        width: 100%;
+        height: 100lvh;
         color: white;
         display: block;
         margin: auto;
         padding: 10px;
     }
-
 }
 </style>
   
